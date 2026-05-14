@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoologico_Tienda</title>
+  <style>
+	.tdSucursal 
+	  {
+  background-color:#f5deb3;
+	}
+	  .tdSucursal:hover 
+	  {
+  transform:none;
+	}
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 20px;
+      background-color: darkolivegreen;
+      color: #4b2e2e;
+    }
+    h1 {;
+		text-align: center;
+      color: #432841;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+	  }
+	.tdTitulo
+	  {
+		  padding: 0px;
+		  border: 1px;
+		  align-content: center;
+		  background-color:darkolivegreen;
+	  }
+	  .tdTitulo:hover{background-color:#718A39;}
+    td {
+      border: 2px solid #d2b48c;
+      padding: 15px;
+      text-align: center;
+      background-color: #fffaf0;
+      transition: transform 0.2s;
+    }
+    td:hover {
+      transform: scale(1.05);
+      background-color: #f5deb3;
+    }
+	  h2{color:#432841}
+    h3 {
+      margin: 10px 0;
+      color: #6b4226;
+    }
+    p {
+      font-weight: bold;
+      color: #8b4513;
+    }
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    button:nth-child(1) {
+      background-color: #6b4226;
+      color: #fff;
+    }
+    button:nth-child(2) {
+      background-color: #d2691e;
+      color: #fff;
+    }
+    #resumen {
+      border: 2px solid #6b4226;
+      padding: 15px;
+      background-color: antiquewhite;
+      border-radius: 8px;
+    }
+    #resumen h2 {
+      color: #6b4226;
+    }
+    #resumen h3 {
+      color: #8b0000;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    #detalleTotal {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #4b2e2e;
+    }
+  </style>
+</head>
+<body>
+	<table><tr><td class="tdTitulo"><h2>Back Home</h2></td></tr>
+		<tr><td class="tdTitulo"><h1>Tienda Oficial Zoológico CLN</h1></td></tr></table>
+<table>
+    <tr>
+      <td><img src="bolsa.jpg" width="150" height="150">
+        <h3>Bolsa temática del Zoológico CLN</h3><p>$59.99</p>
+        <button onclick="agregar('Bolsa temática del Zoológico CLN', 59.99)">+</button>
+        <button onclick="quitar('Bolsa temática del Zoológico CLN',59.99)">-</button>
+      </td>
+      <td><img src="leon.jpg" width="150" height="150">
+        <h3>Gorra de León</h3><p>$99.99</p>
+        <button onclick="agregar('Gorra de León',99.99)">+</button>
+        <button onclick="quitar('Gorra de León',99.99)">-</button>
+      </td>
+      <td><img src="changuito.jpg" width="150" height="150">
+        <h3>Muñeco de changuito</h3><p>$199.99</p>
+        <button onclick="agregar('Muñeco de changuito',199.99)">+</button>
+        <button onclick="quitar('Muñeco de changuito',199.99)">-</button>
+      </td>
+      <td><img src="camisa.jpg" width="150" height="150">
+        <h3>Camisa temática del Zoológico CLN</h3>
+        <p>$159.99</p>
+        <button onclick="agregar('Camisa temática del Zoológico CLN',159.99)">+</button>
+        <button onclick="quitar('Camisa temática del Zoológico CLN',159.99)">-</button>
+      </td>
+      <td><img src="cocodrilo.jpg" width="150" height="150">
+        <h3>Pantuflas de cocodrilo</h3><p>$199.99</p>
+        <button onclick="agregar('Pantuflas de cocodrilo',199.99)">+</button>
+        <button onclick="quitar('Pantuflas de cocodrilo',199.99)">-</button>
+      </td>
+	  <td class="tdSucursal"><h2 color="#6b4226">¡VISÍTANOS EN LA SUCURSAL!</h2>
+	<img src="sucursal.jpg" width="240" height="300">
+        <p>P.º Niños Heroes, Las Quintas, 80060 Culiacán Rosales, Sin.</p>
+      </td>
+    </tr>
+  </table>
+
+<div id="resumen">
+    <h2>📝 Resumen del Pedido </h2>
+  <h3>Total a pagar:</h3>
+    <div id="detalleTotal"></div>
+    <ul id="lista"></ul>
+    <button onclick="pagar()">PAGAR</button>
+    <button onclick="cancelar()">CANCELAR</button>
+</div>
+
+<script>
+    let pedido = {};
+    let total = 0;
+
+    function agregar(producto, precio) {
+      if (!pedido[producto]) {
+        pedido[producto] = {cantidad: 0, precio: precio};
+      }
+      pedido[producto].cantidad++;
+      total += precio;
+      actualizarResumen();
+    }
+
+    function quitar(producto, precio) {
+      if (pedido[producto] && pedido[producto].cantidad > 0) {
+        pedido[producto].cantidad--;
+        total -= precio;
+        if (pedido[producto].cantidad === 0) {
+          delete pedido[producto];
+        }
+        actualizarResumen();
+      }
+    }
+
+    function actualizarResumen() {
+      const lista = document.getElementById("lista");
+      lista.innerHTML = "";
+      for (let producto in pedido) {
+        const item = document.createElement("li");
+        item.textContent = `${producto} x${pedido[producto].cantidad} = $${(pedido[producto].cantidad * pedido[producto].precio).toFixed(2)}`;
+        lista.appendChild(item);
+      }
+      document.getElementById("detalleTotal").textContent = `Productos seleccionados: ${Object.keys(pedido).length} | Total: $${total.toFixed(2)}`;
+    }
+
+    function pagar() {
+      let resumen = "🧾 Ticket de compra:\n\n";
+      for (let producto in pedido) {
+        resumen += `${producto} x${pedido[producto].cantidad} = $${(pedido[producto].cantidad * pedido[producto].precio).toFixed(2)}\n`;
+      }
+      resumen += `\n💰 Total a pagar: $${total.toFixed(2)}`;
+      alert(resumen);
+    }
+
+    function cancelar() {
+      pedido = {};
+      total = 0;
+      actualizarResumen();
+    }
+</script>
+
+</body>
+</html>
