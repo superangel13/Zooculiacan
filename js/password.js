@@ -6,27 +6,28 @@ const proyectos = {
     },
     "payan": {
         password: "payan123",
-        ruta: "esmeralda/payan/Rutinagym.html"
+        // Corregido a Esmeralda y Payan con mayúsculas
+        ruta: "Esmeralda/Payan/Rutinagym.html" 
     },
     "simon": {
         password: "simonEsmeralda",
-        ruta: "esmeralda/simon/Babuino_hats.html"
+        ruta: "Esmeralda/Simon/Babuino_hats.html"
     },
     "noemy": {
         password: "noemyPass",
-        ruta: "esmeralda/noemy/Maquillaje.html"
+        ruta: "Esmeralda/Noemy/Maquillaje.html"
     },
     "irving": {
         password: "irving99",
-        ruta: "esmeralda/irving/Mundial_de_futbol.html"
+        ruta: "Esmeralda/Irving/Mundial_de_futbol.html"
     },
     "matzumoto": {
         password: "matzu456",
-        ruta: "esmeralda/matzumoto/Bicicletas.html"
+        ruta: "Esmeralda/Matzumoto/Bicicletas.html"
     },
     "karel": {
         password: "karelModa12",
-        ruta: "esmeralda/karel/Estilos_de_moda.html"
+        ruta: "Esmeralda/Karel/Estilos_de_moda.html"
     }
 };
 
