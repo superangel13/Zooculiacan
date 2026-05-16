@@ -1,34 +1,35 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 30px;
-  background-color: #0B0F19;
+  background-color: #0A1128; /* Azul oscuro de estadio */
 }
 
-/* Forzar a que las tablas tengan esquinas redondeadas y fondo oscuro */
+/* Bordes para las tablas del mundial */
 table {
   border-collapse: collapse;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
-/* Texto de los párrafos grande */
+/* Textos grandes */
 p {
   font-size: 22px; 
   line-height: 1.6;
+  color: #E2E8F0;
 }
 
 /* Títulos de las secciones */
 h2 {
-  margin-top: 10px;
+  margin-top: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 36px; 
 }
 
-/* Enlaces en Verde Neón con subrayado */
+/* Enlaces estilo botón o texto dorado */
 a {
-  color: #00FF66;
-  text-decoration: underline;
+  color: #FBBF24; /* Color Oro */
+  text-decoration: none;
   font-weight: bold;
   font-family: Arial, sans-serif;
   font-size: 22px; 
@@ -36,29 +37,30 @@ a {
 
 a:hover {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
-/* Las cajitas de las imágenes con borde verde neón */
+/* Imágenes fijas con marco dorado */
 img {
-  margin: 8px;
-  border: 2px solid #00FF66;
-  background-color: #0B0F19;
+  border: 3px solid #FBBF24;
+  background-color: #0A1128;
+  border-radius: 8px;
 }
 
 /* Cuadros de texto del formulario */
 textarea, input[type="text"] {
-  background-color: #0B0F19;
-  border: 1px solid #00FF66;
+  background-color: #0A1128;
+  border: 1px solid #FBBF24;
   color: #FFFFFF;
   padding: 8px;
   border-radius: 4px;
   font-size: 18px; 
 }
 
-/* Botón enviar Verde Neón */
+/* Botón de enviar color Oro */
 input[type="submit"] {
-  background-color: #00FF66;
-  color: #0B0F19;
+  background-color: #FBBF24;
+  color: #0A1128;
   border: none;
   padding: 10px 25px;
   font-weight: bold;
@@ -69,6 +71,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #00CC52;
+  background-color: #D97706;
   color: #FFFFFF;
 }
