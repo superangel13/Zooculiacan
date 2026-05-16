@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 30px;
-  background-color: #FFF5F5; /* Fondo rosa blush súper sutil */
+  background-color: #FFF5F5;
 }
 
 /* Redondeado y sombras suaves para las tablas */
@@ -9,7 +9,7 @@ table {
   border-collapse: collapse;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0px 4px 15px rgba(181, 101, 118, 0.15); /* Sombra rosa suave */
+  box-shadow: 0px 4px 15px rgba(181, 101, 118, 0.15);
 }
 
 /* Párrafos grandes e informativos */
@@ -25,7 +25,7 @@ h2 {
   font-weight: normal;
 }
 
-/* Enlaces estilo Wikipedia pero en color Rose Gold / Frambuesa */
+/* Enlaces estilo Rose Gold / Frambuesa */
 a {
   color: #B56576;
   text-decoration: none;
@@ -42,7 +42,7 @@ img {
   margin: 8px;
   border: 3px solid #E5B3BB;
   background-color: #FFFFFF;
-  border-radius: 10px; /* Bordes redondos para que se vean lindas */
+  border-radius: 10px;
 }
 
 /* Cuadros de texto del formulario */
@@ -52,10 +52,11 @@ textarea, input[type="text"] {
   color: #3D2C2E;
   padding: 8px;
   border-radius: 6px;
-  font-size: 18px; 
+  font-size: 18px;
+  max-width: 100%; /* Evita que se salgan de la tabla */
 }
 
-/* Botón de enviar color Frambuesa que cambia al pasar el mouse */
+/* Botón de enviar color Frambuesa */
 input[type="submit"] {
   background-color: #B56576;
   color: #FFFFFF;
