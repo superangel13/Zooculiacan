@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 30px;
+  background-color: #0D1117; /* Gris oscuro espacial */
+}
+
+/* Tablas con estilo de matriz cibernética */
+table {
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Párrafos grandes en color blanco brillante */
+p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
+
+/* Títulos de categorías robóticos */
+h2 {
+  margin-top: 5px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+/* Enlaces neón con efecto de subrayado futurista */
+a {
+  color: #00F0FF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Imágenes con marco cian brillante en las bahías */
+img {
+  border: 2px solid #00F0FF;
+  background-color: #0D1117;
+  padding: 5px;
+}
+
+/* Caja de texto del panel de comentarios */
+textarea {
+  background-color: #0D1117;
+  border: 2px solid #00F0FF;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Courier New', monospace;
+}
