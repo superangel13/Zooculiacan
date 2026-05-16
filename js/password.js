@@ -28,6 +28,10 @@ const proyectos = {
     "karel": {
         password: "karelModa12",
         ruta: "Esmeralda/Karel/Estilos_de_moda.html"
+    },
+    "kevin": {
+        password: "kevinCelulares", // Esta es su contraseña
+        ruta: "Esmeralda/Kevin/Celulares.html" 
     }
 };
 
