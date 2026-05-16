@@ -1,0 +1,76 @@
+body {
+  font-family: 'Georgia', serif; /* Tipografía elegante para títulos y fondo */
+  margin: 30px;
+  background-color: #FAF5EF; 
+}
+
+/* Bordes fijos y cajas estilizadas */
+table {
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px rgba(74, 21, 37, 0.06); /* Sombra muy sutil de lujo */
+}
+
+/* Párrafos grandes en Arial para que se lean limpios y modernos */
+p {
+  font-size: 22px; 
+  line-height: 1.7;
+  font-family: 'Arial', sans-serif;
+  color: #3D2A2E;
+}
+
+/* Títulos de alta costura */
+h2 {
+  margin-top: 5px;
+  font-size: 36px; 
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+/* Enlaces elegantes en color vino */
+a {
+  color: #4A1525;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+a:hover {
+  color: #8B5E66;
+  text-decoration: underline;
+}
+
+/* Las 2 imágenes fijas con un marco tipo cuadro de exhibición */
+img {
+  margin: 12px;
+  border: 2px solid #4A1525;
+  background-color: #FFFFFF;
+  padding: 4px;
+}
+
+/* Cuadros de texto del formulario */
+textarea, input[type="text"] {
+  background-color: #FFFFFF;
+  border: 1px solid #8B5E66;
+  color: #2B1A1D;
+  padding: 10px;
+  font-size: 18px; 
+}
+
+/* Botón de enviar color Burgundy */
+input[type="submit"] {
+  background-color: #4A1525;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 18px; 
+  letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+  background-color: #2B0A13;
+}
