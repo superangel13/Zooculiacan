@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 30px;
-  background-color: #0A1128; /* Azul oscuro de estadio */
+  background-color: #0A1128;
 }
 
 /* Bordes para las tablas del mundial */
@@ -28,7 +28,7 @@ h2 {
 
 /* Enlaces estilo botón o texto dorado */
 a {
-  color: #FBBF24; /* Color Oro */
+  color: #FBBF24;
   text-decoration: none;
   font-weight: bold;
   font-family: Arial, sans-serif;
@@ -40,8 +40,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Imágenes fijas con marco dorado */
+/* Las dos imágenes juntas llevarán un espacio entre ellas y marco dorado */
 img {
+  margin: 8px;
   border: 3px solid #FBBF24;
   background-color: #0A1128;
   border-radius: 8px;
