@@ -41,9 +41,6 @@ function accederA(cliente) {
 
     // 2. Verificar si el cliente existe en nuestra lista
     if (proyectos[cliente]) {
-        if(proyectos[zooculiacan]) {
-            window.location.href = proyectos[cliente].ruta;
-        } else {
         
         // 3. Si la contraseña coincide, redirigir
         if (passwordIngresada === proyectos[cliente].password) {
