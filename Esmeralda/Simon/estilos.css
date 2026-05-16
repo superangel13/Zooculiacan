@@ -1,5 +1,3 @@
-/* Diseño general del cuerpo */
-/* Estilos generales para limpiar la página */
 body {
   font-family: 'Arial', sans-serif;
   margin: 30px;
@@ -13,11 +11,18 @@ table {
   overflow: hidden;
 }
 
+/* NUEVO: Controla el tamaño de los textos en los párrafos */
+p {
+  font-size: 18px; /* Texto normal más grande */
+  line-height: 1.6; /* Espaciado entre renglones para que se lea mejor */
+}
+
 /* Estilo para los títulos de cada marca */
 h2 {
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 28px; /* MODIFICADO: Título bastante más grande */
 }
 
 /* Diseño de los enlaces (Línea roja abajo al pasar el mouse) */
@@ -26,6 +31,7 @@ a {
   text-decoration: underline;
   font-weight: bold;
   font-family: Arial, sans-serif;
+  font-size: 18px; /* MODIFICADO: Enlaces del mismo tamaño que el texto */
 }
 
 a:hover {
@@ -46,6 +52,7 @@ textarea, input[type="text"] {
   color: #FFFFFF;
   padding: 6px;
   border-radius: 4px;
+  font-size: 16px; /* MODIFICADO: Letra del formulario un poco más grande */
 }
 
 /* Botón enviar Rojo Brillante */
@@ -58,6 +65,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   text-transform: uppercase;
+  font-size: 16px; /* MODIFICADO: Letra del botón más grande */
 }
 
 input[type="submit"]:hover {
