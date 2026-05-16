@@ -1,42 +1,57 @@
-/* Diseño general */
-/* estilos.css */
+/* Diseño general del cuerpo */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #FFFFFF; /* Texto blanco por defecto */
+  font-family: 'Verdana', sans-serif;
+  margin: 40px;
 }
 
-table {
-  border-collapse: collapse;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3); /* Sombra roja sutil */
-  background-color: #1A1A1A; /* Fondo de tabla gris muy oscuro */
-  border: 1px solid #FF0000; /* Borde de tabla rojo */
-}
-
-h1 {
-  color: #FF0000; /* Título principal rojo */
-  text-shadow: 1px 1px 2px #000; /* Sombra negra para contraste */
-}
-
+/* Estilo para los títulos de marca */
 h2 {
-  color: #FF0000; /* Títulos de sección rojos */
-  border-bottom: 2px solid #FF0000;
-  display: inline-block;
+  border-left: 5px solid #FF0000;
+  padding-left: 15px;
 }
 
+/* Estilo para los enlaces */
 a {
-  color: #FF0000; /* Enlaces rojos */
+  color: #FF0000;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 14px;
 }
 
-/* Botón de comentarios */
+a:hover {
+  color: #FFFFFF;
+  background-color: #FF0000;
+}
+
+/* Estilo para las imágenes dentro de la marquesina */
+img {
+  margin: 10px;
+  border: 2px solid #FF0000;
+  border-radius: 5px;
+}
+
+/* Estilo para los cuadros de texto (Input y Textarea) */
+input[type="text"], textarea {
+  background-color: #000000;
+  border: 1px solid #FF0000;
+  color: #FFFFFF;
+  padding: 8px;
+}
+
+/* Estilo para el botón de enviar */
 input[type="submit"] {
   background-color: #FF0000;
-  color: white;
-  padding: 10px 20px;
+  color: #FFFFFF;
   border: none;
-  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: bold;
   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #CC0000;
+}
+
+/* Bordes suaves para la tabla */
+table {
+  border-radius: 10px;
 }
