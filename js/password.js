@@ -1,9 +1,9 @@
 // El objeto ahora se llama "proyectos" todo junto y sin espacios
 const proyectos = {
-    //"zooculiacan": {
-    //    password:"",
-    //    ruta: "norma/Zooculiacan.html"
-   // },
+    "zooculiacan": {
+     //   password:"",
+        ruta: "norma/Zooculiacan.html"
+    },
     "payan": {
         password: "payan123",
         // Corregido a Esmeralda y Payan con mayúsculas
@@ -41,7 +41,7 @@ function accederA(cliente) {
 
     // 2. Verificar si el cliente existe en nuestra lista
     if (proyectos[cliente]) {
-        if(proyectos[ZooCuliacan]) {
+        if(proyectos[zooculiacan]) {
             window.location.href = proyectos[cliente].ruta;
         } else {
         
