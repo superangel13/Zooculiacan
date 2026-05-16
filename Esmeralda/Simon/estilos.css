@@ -11,36 +11,36 @@ table {
   overflow: hidden;
 }
 
-/* NUEVO: Controla el tamaño de los textos en los párrafos */
+/* MODIFICADO: Texto de los párrafos bastante más grande */
 p {
-  font-size: 18px; /* Texto normal más grande */
-  line-height: 1.6; /* Espaciado entre renglones para que se lea mejor */
+  font-size: 22px; 
+  line-height: 1.6;
 }
 
-/* Estilo para los títulos de cada marca */
+/* MODIFICADO: Títulos de cada marca mucho más grandes */
 h2 {
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 28px; /* MODIFICADO: Título bastante más grande */
+  font-size: 36px; 
 }
 
-/* Diseño de los enlaces (Línea roja abajo al pasar el mouse) */
+/* MODIFICADO: Enlaces más grandes para que resalten */
 a {
   color: #FF2200;
   text-decoration: underline;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  font-size: 18px; /* MODIFICADO: Enlaces del mismo tamaño que el texto */
+  font-size: 22px; 
 }
 
 a:hover {
   color: #FFFFFF;
 }
 
-/* Las cajitas de las imágenes con borde rojo como la imagen */
+/* Las cajitas de las imágenes con borde rojo */
 img {
-  margin: 5px;
+  margin: 8px;
   border: 2px solid #FF2200;
   background-color: #000000;
 }
@@ -50,9 +50,9 @@ textarea, input[type="text"] {
   background-color: #0B0B0B;
   border: 1px solid #FF2200;
   color: #FFFFFF;
-  padding: 6px;
+  padding: 8px;
   border-radius: 4px;
-  font-size: 16px; /* MODIFICADO: Letra del formulario un poco más grande */
+  font-size: 18px; 
 }
 
 /* Botón enviar Rojo Brillante */
@@ -60,12 +60,12 @@ input[type="submit"] {
   background-color: #FF2200;
   color: #FFFFFF;
   border: none;
-  padding: 8px 20px;
+  padding: 10px 25px;
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
   text-transform: uppercase;
-  font-size: 16px; /* MODIFICADO: Letra del botón más grande */
+  font-size: 18px; 
 }
 
 input[type="submit"]:hover {
