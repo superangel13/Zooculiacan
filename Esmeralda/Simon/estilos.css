@@ -1,57 +1,65 @@
 /* Diseño general del cuerpo */
+/* Estilos generales para limpiar la página */
 body {
-  font-family: 'Verdana', sans-serif;
-  margin: 40px;
+  font-family: 'Arial', sans-serif;
+  margin: 30px;
+  background-color: #000000;
 }
 
-/* Estilo para los títulos de marca */
+/* Forzar a que las tablas tengan esquinas redondeadas y fondo oscuro */
+table {
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Estilo para los títulos de cada marca */
 h2 {
-  border-left: 5px solid #FF0000;
-  padding-left: 15px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Estilo para los enlaces */
+/* Diseño de los enlaces (Línea roja abajo al pasar el mouse) */
 a {
-  color: #FF0000;
-  text-decoration: none;
-  font-size: 14px;
+  color: #FF2200;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
 }
 
 a:hover {
   color: #FFFFFF;
-  background-color: #FF0000;
 }
 
-/* Estilo para las imágenes dentro de la marquesina */
+/* Las cajitas de las imágenes con borde rojo como la imagen */
 img {
-  margin: 10px;
-  border: 2px solid #FF0000;
-  border-radius: 5px;
-}
-
-/* Estilo para los cuadros de texto (Input y Textarea) */
-input[type="text"], textarea {
+  margin: 5px;
+  border: 2px solid #FF2200;
   background-color: #000000;
-  border: 1px solid #FF0000;
-  color: #FFFFFF;
-  padding: 8px;
 }
 
-/* Estilo para el botón de enviar */
+/* Estilos de los cuadros de texto del formulario */
+textarea, input[type="text"] {
+  background-color: #0B0B0B;
+  border: 1px solid #FF2200;
+  color: #FFFFFF;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* Botón enviar Rojo Brillante */
 input[type="submit"] {
-  background-color: #FF0000;
+  background-color: #FF2200;
   color: #FFFFFF;
   border: none;
-  padding: 10px 25px;
+  padding: 8px 20px;
   font-weight: bold;
+  border-radius: 4px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 input[type="submit"]:hover {
-  background-color: #CC0000;
-}
-
-/* Bordes suaves para la tabla */
-table {
-  border-radius: 10px;
+  background-color: #CC1100;
 }
