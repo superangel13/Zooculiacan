@@ -1,8 +1,8 @@
-// 1. Aquí defines las contraseñas y las rutas exactas de cada cliente
-const proyectos Clientes = {
+// El objeto ahora se llama "proyectos" todo junto y sin espacios
+const proyectos = {
     "zooculiacan": {
         password: "conalep2026",
-        ruta: "proyectos/tienda_zoologico.html" // El del Conalep que movimos antes
+        ruta: "proyectos/tienda_zoologico.html"
     },
     "payan": {
         password: "payan123",
@@ -31,16 +31,16 @@ const proyectos Clientes = {
 };
 
 function accederA(cliente) {
-    // 2. Preguntar la contraseña al usuario mediante la alerta
+    // 1. Preguntar la contraseña al usuario
     let passwordIngresada = prompt("Introduce tu contraseña para ver tu avance:");
 
-    // 3. Verificar si el cliente existe en nuestra lista
-    if (proyectosClientes[cliente]) {
+    // 2. Verificar si el cliente existe en nuestra lista
+    if (proyectos[cliente]) {
         
-        // 4. Si la contraseña coincide, redirigir a su carpeta correspondiente
-        if (passwordIngresada === proyectosClientes[cliente].password) {
+        // 3. Si la contraseña coincide, redirigir
+        if (passwordIngresada === proyectos[cliente].password) {
             alert("¡Contraseña correcta! Cargando tus avances...");
-            window.location.href = proyectosClientes[cliente].ruta;
+            window.location.href = proyectos[cliente].ruta;
         } else {
             alert("Contraseña incorrecta. No tienes acceso a este proyecto.");
         }
