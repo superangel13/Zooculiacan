@@ -5,7 +5,8 @@ const contraseñas = {
     "simon": "simonEsmeralda",
     "noemy": "noemyPass",
     "irving": "irving99",
-    "matzumoto": "matzu456"
+    "matzumoto": "matzu456",
+    "karel": "karelModa12" // <-- Añade aquí la contraseña de Karel
 };
 
 function accederA(cliente) {
