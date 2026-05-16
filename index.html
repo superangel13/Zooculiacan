@@ -3,33 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Proyectos y Avances</title>
+    <title>Portal de Clientes | Diseños Esmeralda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <h1>Portal de Proyectos</h1>
-    <hr>
+    <div class="bg-glow"></div>
 
-    <!-- Sección Conalep -->
-    <h2>Conalep (Sistemas Norma)</h2>
-    <ul>
-        <li>
-            <button onclick="accederA('zooculiacan')">Zooculiacán</button>
-        </li>
-    </ul>
+    <div class="container">
+        <header>
+            <div class="logo">💎 Esmeralda Dev</div>
+            <h1>Portal de Proyectos</h1>
+            <p class="subtitle">Selecciona tu perfil para revisar los avances en tiempo real de tu sitio web.</p>
+        </header>
 
-    <!-- Sección Páginas Esmeralda -->
-    <h2>Páginas Esmeralda</h2>
-    <ul>
-        <li><button onclick="accederA('payan')">Payan</button></li>
-        <li><button onclick="accederA('simon')">Simon</button></li>
-        <li><button onclick="accederA('noemy')">Noemy</button></li>
-        <li><button onclick="accederA('irving')">Irving</button></li>
-        <li><button onclick="accederA('matzumoto')">Matzumoto</button></li>
-    </ul>
+        <main>
+            <section class="project-section">
+                <h2 class="section-title">
+                    <span class="icon">🏫</span> Conalep — <span class="category">Sistemas Norma</span>
+                </h2>
+                <div class="grid">
+                    <div class="card" onclick="accederA('zooculiacan')">
+                        <div class="card-content">
+                            <h3>Zooculiacán</h3>
+                            <p>Plataforma y tienda del zoológico</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Vinculamos el sistema de contraseñas -->
+            <section class="project-section">
+                <h2 class="section-title">
+                    <span class="icon">✨</span> Páginas Esmeralda — <span class="category">Clientes Premium</span>
+                </h2>
+                <div class="grid">
+                    <div class="card" onclick="accederA('payan')">
+                        <div class="card-content">
+                            <h3>Payan</h3>
+                            <p>Sitio Web Corporativo</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </div>
+
+                    <div class="card" onclick="accederA('simon')">
+                        <div class="card-content">
+                            <h3>Simon</h3>
+                            <p>Desarrollo E-commerce</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </div>
+
+                    <div class="card" onclick="accederA('noemy')">
+                        <div class="card-content">
+                            <h3>Noemy</h3>
+                            <p>Portafolio Profesional</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </div>
+
+                    <div class="card" onclick="accederA('irving')">
+                        <div class="card-content">
+                            <h3>Irving</h3>
+                            <p>Landing Page de Producto</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </div>
+
+                    <div class="card" onclick="accederA('matzumoto')">
+                        <div class="card-content">
+                            <h3>Matzumoto</h3>
+                            <p>Sistema Web a Medida</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Esmeralda Dev. Todos los derechos reservados. Acceso restringido.</p>
+        </footer>
+    </div>
+
     <script src="js/password.js"></script>
 </body>
 </html>
