@@ -1,78 +1,73 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin: 50px;
-  background-color: #FFFFFF;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 30px;
+  background-color: #FFF5F5; /* Fondo rosa blush súper sutil */
 }
 
-/* Título principal idéntico a Wikipedia */
-h1 {
-  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
-  font-size: 42px;
-  font-weight: normal;
-  margin-bottom: 5px;
-  color: #000000;
+/* Redondeado y sombras suaves para las tablas */
+table {
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(181, 101, 118, 0.15); /* Sombra rosa suave */
 }
 
-/* Títulos de secciones con línea gris abajo */
-h2 {
-  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
-  font-size: 32px;
-  font-weight: normal;
-  margin-top: 30px;
-  margin-bottom: 5px;
-  color: #000000;
-}
-
-/* Párrafos informativos grandes y cómodos */
+/* Párrafos grandes e informativos */
 p {
-  font-size: 22px;
+  font-size: 22px; 
   line-height: 1.6;
 }
 
-/* Enlaces estilo Wikipedia (Azul clásico) */
+/* Títulos grandes con estilo elegante */
+h2 {
+  margin-top: 5px;
+  font-size: 36px; 
+  font-weight: normal;
+}
+
+/* Enlaces estilo Wikipedia pero en color Rose Gold / Frambuesa */
 a {
-  color: #0645AD;
+  color: #B56576;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
+  color: #6D3B47;
   text-decoration: underline;
 }
 
-/* El enlace visitado cambia a un tono morado apagado, tal como Wikipedia */
-a:visited {
-  color: #0B0080;
-}
-
-/* Imágenes estilo miniatura (Thumbnail) de enciclopedia */
+/* Las 2 imágenes fijas con un marco oro rosa muy estético */
 img {
-  margin: 5px;
-  border: 1px solid #C8CCD1;
+  margin: 8px;
+  border: 3px solid #E5B3BB;
   background-color: #FFFFFF;
-  padding: 3px;
+  border-radius: 10px; /* Bordes redondos para que se vean lindas */
 }
 
-/* Cuadros de texto limpios */
+/* Cuadros de texto del formulario */
 textarea, input[type="text"] {
-  border: 1px solid #A2A9B1;
   background-color: #FFFFFF;
-  color: #202122;
-  padding: 6px;
-  font-size: 18px;
+  border: 1px solid #E5B3BB;
+  color: #3D2C2E;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 18px; 
 }
 
-/* Botón estándar de envío */
+/* Botón de enviar color Frambuesa que cambia al pasar el mouse */
 input[type="submit"] {
-  background-color: #F8F9FA;
-  color: #202122;
-  border: 1px solid #A2A9B1;
-  padding: 8px 15px;
-  font-size: 18px;
+  background-color: #B56576;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 6px;
   cursor: pointer;
-  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 18px; 
 }
 
 input[type="submit"]:hover {
-  background-color: #FFFFFF;
-  border-color: #72777D;
+  background-color: #6D3B47;
 }
