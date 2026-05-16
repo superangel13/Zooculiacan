@@ -1,6 +1,7 @@
 // El objeto ahora se llama "proyectos" todo junto y sin espacios
 const proyectos = {
     "zooculiacan": {
+        password:"",
         ruta: "norma/Zooculiacan.html"
     },
     "payan": {
