@@ -1,0 +1,51 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 30px;
+  background-color: #0A0A0A;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #E0E0E0;
+}
+
+h2 {
+  margin-top: 5px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #CCFF00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+img {
+  margin: 6px;
+  border: 2px solid #CCFF00;
+  background-color: #0A0A0A;
+  padding: 4px;
+}
+
+textarea {
+  background-color: #0A0A0A;
+  border: 2px solid #CCFF00;
+  color: #FFFFFF;
+  padding: 12px;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+}
