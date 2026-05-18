@@ -35,7 +35,7 @@ const proyectos = {
     },
         "riverin": {
         password: "Riverin123", // Esta es su contraseña
-        ruta: "Esmeralda/Riverin/Camisetas.html" 
+        ruta: "Esmeralda/Riverin/camisetas.html" 
     }
 };
 
