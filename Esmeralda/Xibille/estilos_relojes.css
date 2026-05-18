@@ -39,6 +39,20 @@ img {
   padding: 5px;
 }
 
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: 1px solid #94A3B8;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-bottom: 2px;
+}
+
+a:hover {
+  color: #94A3B8;
+  border-bottom: 1px solid #FFFFFF;
+}
+
 input[type="text"] {
   width: 100%;
   padding: 8px;
