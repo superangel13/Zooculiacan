@@ -26,6 +26,19 @@ img {
   background-color: #FFFFFF;
 }
 
+a {
+  color: #004225;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: #D4AF37;
+  text-decoration: underline;
+}
+
 input[type="text"] {
   width: 100%;
   padding: 8px;
