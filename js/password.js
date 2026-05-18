@@ -39,7 +39,7 @@ const proyectos = {
     },
         "maure": {
         password: "maureLote", // Esta es su contraseña
-        ruta: "Esmeralda/Maure/Lotecarros.html" 
+        ruta: "Esmeralda/Maure/Lotescarros.html" 
     },
         "xibille": {
         password: "xibilleRolex", // Esta es su contraseña
