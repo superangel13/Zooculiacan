@@ -4,7 +4,6 @@ body {
   background-color: #FFF5F5;
 }
 
-/* Redondeado y sombras suaves para las tablas */
 table {
   border-collapse: collapse;
   border-radius: 12px;
@@ -12,20 +11,17 @@ table {
   box-shadow: 0px 4px 15px rgba(181, 101, 118, 0.15);
 }
 
-/* Párrafos grandes e informativos */
 p {
   font-size: 22px; 
   line-height: 1.6;
 }
 
-/* Títulos grandes con estilo elegante */
 h2 {
   margin-top: 5px;
   font-size: 36px; 
   font-weight: normal;
 }
 
-/* Enlaces estilo Rose Gold / Frambuesa */
 a {
   color: #B56576;
   text-decoration: none;
@@ -37,7 +33,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Las 2 imágenes fijas con un marco oro rosa muy estético */
 img {
   margin: 8px;
   border: 3px solid #E5B3BB;
@@ -45,7 +40,6 @@ img {
   border-radius: 10px;
 }
 
-/* Cuadros de texto del formulario */
 textarea, input[type="text"] {
   background-color: #FFFFFF;
   border: 1px solid #E5B3BB;
@@ -53,10 +47,9 @@ textarea, input[type="text"] {
   padding: 8px;
   border-radius: 6px;
   font-size: 18px;
-  max-width: 100%; /* Evita que se salgan de la tabla */
+  max-width: 100%;
 }
 
-/* Botón de enviar color Frambuesa */
 input[type="submit"] {
   background-color: #B56576;
   color: #FFFFFF;
