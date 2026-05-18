@@ -1,0 +1,159 @@
+body {
+  font-family: 'Verdana', Arial, sans-serif;
+  margin: 20px;
+  background-color: #F4F6F9;
+  color: #333333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #2B6CB0;
+}
+
+a {
+  color: #2B6CB0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: 1px solid #CCCCCC;
+  padding: 4px;
+  background-color: #FAFAFA;
+}
+
+.tabla-principal {
+  width: 85%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+}
+
+.tabla-principal > tr > td {
+  padding: 20px;
+}
+
+.titulo-tienda {
+  text-align: center;
+  color: #2B6CB0;
+  font-size: 45px;
+  margin: 0;
+}
+
+.subtitulo-tienda {
+  text-align: center;
+  color: #718096;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.linea-division {
+  border: none;
+  height: 2px;
+  background-color: #2B6CB0;
+}
+
+.tabla-productos {
+  width: 100%;
+  border: 1px solid #2B6CB0;
+  border-collapse: collapse;
+}
+
+.tabla-productos th, .tabla-productos td {
+  border: 1px solid #2B6CB0;
+  padding: 12px;
+}
+
+.encabezado-productos th {
+  background-color: #2B6CB0;
+  color: #FFFFFF;
+}
+
+.celda-nombre {
+  font-weight: bold;
+}
+
+.celda-imagen {
+  text-align: center;
+}
+
+.celda-precio {
+  text-align: center;
+  font-weight: bold;
+}
+
+.celda-enlace {
+  text-align: center;
+}
+
+.tabla-formulario {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+.tabla-formulario td {
+  padding: 8px;
+}
+
+.etiqueta-form {
+  font-weight: bold;
+  width: 25%;
+}
+
+.entrada-texto, .entrada-area {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #CBD5E0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.celda-boton {
+  text-align: left;
+}
+
+.boton-enviar {
+  background-color: #2B6CB0;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.boton-enviar:hover {
+  background-color: #1A446C;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #A0AEC0;
+}
+
+.titulo-producto {
+  text-align: center;
+  color: #2B6CB0;
+  font-size: 32px;
+  margin: 0;
+}
+
+.bloque-imagen {
+  text-align: center;
+}
+
+.enlace-regreso {
+  text-align: center;
+  font-size: 18px;
+}
