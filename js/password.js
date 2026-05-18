@@ -7,7 +7,7 @@ const proyectos = {
     "payan": {
         password: "payan123",
         // Corregido a Esmeralda y Payan con mayúsculas
-        ruta: "Esmeralda/Payan/Rutinagym.html" 
+        ruta: "Esmeralda/Payan/gym.html" 
     },
     "simon": {
         password: "simonEsmeralda",
